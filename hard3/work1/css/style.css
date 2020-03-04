@@ -49,7 +49,7 @@ body {
   justify-content: space-between;
 }
 
-.button {
+.btn {
   width: 134px;
   height: 42px;
   text-align: center;
@@ -58,13 +58,13 @@ body {
   text-transform: uppercase;
 }
 
-.button--outline {
+.btn--outline {
   border: #66CC66 2px solid;
   color: #66CC66;
   background-color: #ffffff;
 }
 
-.button--primary {
+.btn--primary {
   color: #ffffff;
   border: #66CC66 2px solid;
   background-color: #66CC66;

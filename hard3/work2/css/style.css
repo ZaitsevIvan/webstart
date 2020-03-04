@@ -87,7 +87,7 @@ margin-bottom: 31px;
   margin-bottom: 22px;
 }
 
-.service__button {
+.service__btn {
   width: 209px;
   height: 65px;
   box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04);
@@ -100,7 +100,7 @@ margin-bottom: 31px;
   color: #ffffff;
 }
 
-.button--small {
+.btn--small {
   width: 146px;
   height: 52px;
 }
