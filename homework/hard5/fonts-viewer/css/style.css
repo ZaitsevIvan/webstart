@@ -3,7 +3,7 @@
   font-family: 'BebasRegular';
   src:
   url('./fonts/BebasRegular/BebasRegular.woff') format('woff'),
-  url('/homework/hard5/fonts-viewer/fonts/BebasRegular/BebasRegular.woff2') format('woff');
+  url('./fonts/BebasRegular/BebasRegular.woff2') format('woff');
 
   }
 
