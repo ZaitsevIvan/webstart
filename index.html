@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>BEM lesson</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="menu">
-          <!--Блок - menu(Возможности блока, включают в себя: Вложенную структуру, свободное перемещение,
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>BEM lesson</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="menu">
+        <!--Блок - menu(Возможности блока, включают в себя: Вложенную структуру, свободное перемещение,
           повторное использование)-->
-          <div class="logo menu__logo">Repair Design Project</div>
-          <nav class="nav menu__nav">
-            <a href="#" class="nav__item">Главная</a>
-            <!--Элемент menu__nav(Составная часть блока nav, которая не может использоваться в отрыве от него.
+        <div class="logo menu__logo">Repair Design Project</div>
+        <nav class="nav menu__nav">
+          <a href="#" class="nav__item">Главная</a>
+          <!--Элемент menu__nav(Составная часть блока nav, которая не может использоваться в отрыве от него.
             Элементы не существуют вне блока. Каждый элемент может принадлежать только одному блоку), -->
-            <a href="#" class="nav__item">Проекты</a>
-            <a href="#" class="nav__item">Замер</a>
-            <a href="#" class="nav__item">Команда</a>
-            <a href="#" class="nav__item">Отзывы</a>
-            <a href="#" class="nav__item">Контакты</a>
-          </nav>
-          <div class="contacts menu__contacts">
-            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-            <button class="button contacts__button button--primary">Заказать звонок</button>
-            <!--
+          <a href="#" class="nav__item">Проекты</a>
+          <a href="#" class="nav__item">Замер</a>
+          <a href="#" class="nav__item">Команда</a>
+          <a href="#" class="nav__item">Отзывы</a>
+          <a href="#" class="nav__item">Контакты</a>
+        </nav>
+        <div class="contacts menu__contacts">
+          <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+          <button class="button contacts__button button--primary">Заказать звонок</button>
+          <!--
             Модификатор button--primary(БЭМ-сущность, определяющая вид, состояние и поведение блока и элемента.
             Использование модификаторов опционально, количество -- неограничено.
             блоку или элементу нельзя одновременно присвоить разные значения модификатора.
             По своей сути модификаторы похожи на атрибуты в HTML. Один и тот же блок выглядит по-разному благодаря применению модификатора.)
             -->
-          </div>
         </div>
-        <!-- /.menu -->
       </div>
-      <!-- /.container -->
-    </header>
-    <main>
-      <section class="hero">
-        <a href="#" class="instagram hero__instagram">Instagram</a>
-        <div class="hero__content">
-          <div class="container">
-            <h1 class="title hero__title">турецкий ремонт в Ростове-на-дону</h1>
-            <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней
-              и 20% от стоимости материалов за счет организации работы</p>
-            <button class="button hero__button button--primary ">Рассчитать стоимость</button>
-            <button class="button hero__button button--outline ">Отправить заявку</button>
-          </div>
-          <!-- /.container -->
+      <!-- /.menu -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <main>
+    <section class="hero">
+      <div class="instagram hero__instagram">
+        <a class="instagram__link" href="#" class="instagram hero__instagram">Instagram</a>
+      </div>
+      <div class="hero__content">
+        <div class="container">
+          <h1 class="title hero__title">турецкий ремонт в Ростове-на-дону</h1>
+          <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней
+            и 20% от стоимости материалов за счет организации работы</p>
+          <button class="button hero__button button--primary ">Рассчитать стоимость</button>
+          <button class="button hero__button button--outline ">Отправить заявку</button>
         </div>
-        <!-- /.hero__content -->
-        <a href="#" class="scrolldown">листайте вниз</a>
-      </section>
-      <!-- /.hero -->
-    </main>
-  </body>
+        <!-- /.container -->
+      </div>
+      <!-- /.hero__content -->
+      <a href="#" class="scrolldown">листайте вниз</a>
+    </section>
+    <!-- /.hero -->
+  </main>
+</body>
+
 </html>
