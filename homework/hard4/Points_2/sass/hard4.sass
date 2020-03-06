@@ -1,0 +1,158 @@
+@use sass:color
+$color: #33aaff
+
+//   adjust-color($color,$red: 51,$green: -8,$blue: -51) #66a2cc
+//    $color  #33aaff
+//    adjust-color($color,$red: 153,$green: 64,$blue: 0) #cceaff
+//    adjust-color($color,$red: 204,$green: -119,$blue: -187)  #ff3344
+//    adjust-color($color,$red: -51,$green: -140,$blue: -204) #001e33
+//    adjust-color($color,$red: 204,$green: 85,$blue: 0) white
+//    adjust-color($color,$red: 102,$green: -17,$blue: -102) #999999 
+
+ body, p, h1, h2, h3, h4
+    margin: 0
+    padding: 0
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    
+.header
+  background-color: adjust-color($color,$red: -51,$green: -140,$blue: -204)
+  padding: 15px 0
+  color: adjust-color($color,$red: 204,$green: 85,$blue: 0)
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    line-height: 47px
+  &__callback
+    text-align: right
+    padding: 21px
+
+.section
+  padding: 70px 0
+  text-align: center
+  &__title
+    font-size: 36px
+    font-weight: 700
+    color: adjust-color($color,$red: -51,$green: -140,$blue: -204)
+    & span
+      color: adjust-color($color,$red: 204,$green: -119,$blue: -187)
+  &__underline
+    margin: 10px auto
+    width: 200px
+    height: 2px
+    background-color: $color
+
+.coral
+  color: adjust-color($color,$red: 204,$green: -119,$blue: -187)
+
+.main
+  background-color: adjust-color($color,$red: 153,$green: 64,$blue: 0)
+    position: relative
+  & h1
+      margin-bottom: 25px
+      font-size: 60px
+      font-weight: 300
+      text-transform: uppercase
+      color: adjust-color($color,$red: -51,$green: -140,$blue: -204)
+  & .sep
+      margin: 25px auto
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      background-color: adjust-color($color,$red: 204,$green: 85,$blue: 0)
+  & h3
+      font-size: 36px
+      font-weight: 300
+      color:  adjust-color($color,$red: -51,$green: -140,$blue: -204)
+
+  &__location
+      margin: 24px auto 21px
+      width: 300px
+      height: 64px
+      font-size: 18px
+      line-height: 64px
+      color: $color
+      border: 1px solid adjust-color($color,$red: -51,$green: -140,$blue: -204)
+
+  & .comment
+      margin-top: 55px
+      color: adjust-color($color,$red: 102,$green: -17,$blue: -102)
+      font-size: 14px
+      line-height: 18px
+
+.problems__list
+  text-align-last: 
+  & ul
+    list-style: none
+    & li
+      min-height: 100px
+      font-size: 18px
+      font-weight: 300
+      color: adjust-color($color,$red: -51,$green: -140,$blue: -204)
+      &::before
+        position: relative
+        right: 30px
+        top: 25px
+        content: ''
+        display: block
+        width: 20px
+        height: 20px
+        background-color: $color
+        border-radius: 50%
+
+.problems__wrapper
+  margin: 0 auto
+  padding: 30px
+  max-width: 700px
+  border: 2px solid $color
+  & p
+    margin-bottom: 10px
+    font-size: 24px
+    color: adjust-color($color,$red: -51,$green: -140,$blue: -204)
+
+.prove
+  background-color: adjust-color($color,$red: 153,$green: 64,$blue: 0)
+  &__img
+    margin: 25px auto 10px
+    min-height: 70px
+  & img
+    border-bottom: 1px solid $color
+
+.footer
+  padding: 15px 0
+  font-size: 14px
+  font-weight: 300
+  background-color: adjust-color($color,$red: -51,$green: -140,$blue: -204)
+  &__left
+    color: adjust-color($color,$red: 51,$green: -8,$blue: -51)
+    opacity: 0.5
+  &__right
+    text-align: right
+    color: $color
+    & a
+      color: $color
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
+.button
+  padding: 10px 30px
+  display: inline-block
+  cursor: 
+  font-size: 14px
+  font-weight: 700
+  text-align: center
+  text-transform: uppercase
+  color: adjust-color($color,$red: 204,$green: 85,$blue: 0)
+  background-color: adjust-color($color,$red: 204,$green: -119,$blue: -187)
+  border: 1px solid adjust-color($color,$red: 204,$green: -119,$blue: -187)
+  border-radius: 25px
+  &__start
+    margin-top: 20px
+  &:hover
+    -webkit-box-shadow: 00 25px adjust-color($color,$red: 102,$green: -17,$blue: -102)
+    box-shadow: 00 25px adjust-color($color,$red: 102,$green: -17,$blue: -102)
+    background-color: $color
+    border: 1px solid adjust-color($color,$red: 153,$green: 64,$blue: 0)
+  &:focus
+    outline: none
