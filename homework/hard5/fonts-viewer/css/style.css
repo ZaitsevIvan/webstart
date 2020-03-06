@@ -1,0 +1,40 @@
+
+@font-face {
+  font-family: 'BebasRegular';
+  src:
+  url('/homework/hard5/fonts-viewer/fonts/BebasRegular/BebasRegular.woff') format('woff'),
+  url('/homework/hard5/fonts-viewer/fonts/BebasRegular/BebasRegular.woff2') format('woff');
+
+  }
+
+.text-box{
+	padding-top: 2rem;
+}
+.result {
+	margin-bottom: 0;
+	margin-top: 3rem;
+}
+.fonts {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2rem;
+}
+small {
+	font-size: 1.3rem;
+}
+
+.result--open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.result--bebas-regular {
+  font-family: 'BebasRegular';
+}
+
+.result--bad-script {
+  font-family: 'Bad Script', cursive;
+}
+
+.result-lobster {
+  font-family: 'Lobster', cursive;
+}
