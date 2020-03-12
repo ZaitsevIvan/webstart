@@ -691,7 +691,11 @@ img {
     display: none; }
   .contacts__phone {
     color: #ffffff;
-    text-decoration: none; } }
+    text-decoration: none; }
+  .col:nth-of-type(2) .card__title {
+    margin-bottom: 2rem; }
+  .col:nth-of-type(3) .card__title {
+    margin-bottom: 0.5rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
