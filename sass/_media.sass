@@ -1,10 +1,11 @@
 
 @media screen and (max-width:1245px)
   html
-    font-size: 10px
-  .hero
+    font-size: 12px
+  .nav
     &__item
       margin-right: 1rem
+
   
 @media screen and ( max-width: 992px)
   .hero
@@ -12,8 +13,26 @@
       display: none
     &__content
       margin-left: 0
+    &__scrolldown
+      display: none
   .nav
     display: none
+  .contacts
+    &__phone
+      color: $light
+      text-decoration: none
+
+@media screen and (max-width: 760px)
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 4.28rem
+  .card
+      &__text
+        margin-left: 0
+
 
 @media screen and (max-width: 570px)
   .contacts
@@ -33,12 +52,21 @@
     &__text
       font-size: 1.29rem
       margin-bottom: 2.28rem
-    &__btn
+    &__btn, 
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+      font-size: 0.92rem
+    &__send-btn
+      display: block
+      min-width: 22.86rem
+      margin-bottom: 1.85rem
+      font-size: 0.92rem
+  .section-title
+    &__heading
+      font-size: 1.57rem
 
-@media screen and ( max-height: 565px )
+@media screen and ( max-height: 595px )
   .hero
     &__scrolldown
       display: none

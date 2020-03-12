@@ -1,81 +1,327 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
-  <title>BEM lesson</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="menu">
-        <!--Блок - menu(Возможности блока, включают в себя: Вложенную структуру, свободное перемещение,
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>BEM lesson</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="menu">
+          <!--Блок - menu(Возможности блока, включают в себя: Вложенную структуру, свободное перемещение,
           повторное использование)-->
-        <div class="logo menu__logo">Repair Design Project</div>
-        <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Главная</a>
-          <!--Элемент menu__nav(Составная часть блока nav, которая не может использоваться в отрыве от него.
+          <div class="logo menu__logo">Repair Design Project</div>
+          <nav class="nav menu__nav">
+            <a href="#" class="nav__item">Главная</a>
+            <!--Элемент menu__nav(Составная часть блока nav, которая не может использоваться в отрыве от него.
             Элементы не существуют вне блока. Каждый элемент может принадлежать только одному блоку), -->
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
-        </nav>
-        <div class="contacts menu__contacts">
-          <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="btn contacts__btn btn--primary">Заказать звонок</button>
-          <!--
+            <a href="#" class="nav__item">Проекты</a>
+            <a href="#" class="nav__item">Замер</a>
+            <a href="#" class="nav__item">Команда</a>
+            <a href="#" class="nav__item">Отзывы</a>
+            <a href="#" class="nav__item">Контакты</a>
+          </nav>
+          <div class="contacts menu__contacts">
+            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+            <button class="btn contacts__btn btn--primary" data-toggle="modal">Заказать звонок</button>
+            <!--
             Модификатор button--primary(БЭМ-сущность, определяющая вид, состояние и поведение блока и элемента.
             Использование модификаторов опционально, количество -- неограничено.
             блоку или элементу нельзя одновременно присвоить разные значения модификатора.
             По своей сути модификаторы похожи на атрибуты в HTML. Один и тот же блок выглядит по-разному благодаря применению модификатора.)
             -->
-        </div>
-      </div>
-      <!-- /.menu -->
-    </div>
-    <!-- /.container -->
-  </header>
-  <main>
-    <section class="hero">
-      <div class="instagram hero__instagram">
-        <a class="instagram__link" href="#" class="instagram hero__instagram">Instagram</a>
-      </div>
-      <div class="container">
-      <div class="hero__content">
-          <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-          <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней
-            и 20% от стоимости материалов за счет организации работы</p>
-          <button class="btn hero__btn btn--primary ">Рассчитать стоимость</button>
-          <button class="btn hero__send-btn hero__btn btn--outline ">Отправить заявку</button>
-        </div>
-        <!-- /.hero__content -->
-      </div>
-      <!-- /.container -->
-      <a href="#" class="scrolldown hero__scrolldown">листайте вниз</a>
-    </section>
-    <!-- /.hero -->
-
-    <section class="section control">
-      <div class="container">
-        <div class="section-title">
-          <h2 class="section-title__heading">Онлайн контроль</h2>
-          <!-- /.section-title__heading -->
-          <div class="section-title__image">
-            <img src="img/videocamera.svg" alt="Иконка камеры">
           </div>
-          <!-- /.section-title__image -->
         </div>
-        <!-- /.section-title -->
+        <!-- /.menu -->
       </div>
       <!-- /.container -->
-    </section>
-    <!-- /.section control -->
-  </main>
-</body>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="instagram hero__instagram">
+          <a class="instagram__link" href="#" class="instagram hero__instagram">Instagram</a>
+        </div>
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+            <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней
+            и 20% от стоимости материалов за счет организации работы</p>
+            <button class="btn hero__btn btn--primary" data-toggle="modal">Рассчитать стоимость</button>
+            <button class="btn hero__send-btn btn--outline" data-toggle="modal">Отправить заявку</button>
+          </div>
+          <!-- /.hero__content -->
+        </div>
+        <!-- /.container -->
+        <a href="#" class="scrolldown hero__scrolldown">листайте вниз</a>
+      </section>
+      <!-- /.hero -->
+      <section class="section control">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="section-title__heading">Онлайн контроль</h2>
+            <!-- /.section-title__heading -->
+            <div class="section-title__image">
+              <img src="img/videocamera.svg" alt="Иконка камеры">
+            </div>
+            <!-- /.section-title__image -->
+          </div>
+          <!-- /.section-title -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section control -->
+      <section class="section types">
+        <div class="container">
+          <div class="section-title types__section-title">
+            <h2 class="section-title__heading">Виды ремонта</h2>
+            <!-- /.section-title__heading -->
+            <div class="section-title__image">
+              <img src="img/repair-types.svg" alt="Иконка видов ремонта">
+            </div>
+            <!-- /.section-title__image -->
+          </div>
+          <!-- /.section-title -->
+          <div class="row">
+            <div class="col">
+              <div class="card types__card">
+                <img src="img/type-1.jpg" alt="Косметический ремонт" class="card__image">
+                <div class="card__text">
+                  <h3 class="card__title">Косметический ремонт</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item">Демонтаж старых покрытий</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Поклейка обоев</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Роспись стен и потолков</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Укладка полов</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена сантехники</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена розеток и выключателей</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена дверей</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <strong class="card__pricetag">от 900 руб / м<sup>2</sup></strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col">
+              <div class="card types__card">
+                <img src="img/type-2.jpg" alt="Капитальный ремонт" class="card__image">
+                <div class="card__text">
+                  <h3 class="card__title">Капитальный ремонт</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item">Демонтаж старых покрытий</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Поклейка обоев</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Роспись стен и потолков</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Укладка полов</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена сантехники</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена розеток и выключателей</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена дверей</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <strong class="card__pricetag">от 1800 руб / м<sup>2</sup></strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col">
+              <div class="card types__card">
+                <img src="img/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
+                <div class="card__text">
+                  <h3 class="card__title">Дизайнерский ремонт</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item">Демонтаж старых покрытий</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Поклейка обоев</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Роспись стен и потолков</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Укладка полов</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена сантехники</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена розеток и выключателей</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Замена дверей</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <strong class="card__pricetag">от 4000 руб / м<sup>2</sup></strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section types -->
+      <section class="section design">
+        <div class="container">
+          <div class="section-title design__section-title">
+            <h2 class="section-title__heading">Дизайн проект</h2>
+            <!-- /.section-title__heading -->
+            <div class="section-title__image">
+              <img src="img/design-project.svg" alt="Дизайн проект">
+            </div>
+            <!-- /.section-title__image -->
+          </div>
+          <!-- /.section-title -->
+          <p class="design__text">Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным, но и значительно удешевляет материалы и сокращает время ремонтных работ</p>
+          <div class="row">
+            <div class="col">
+              <div class="card types__card">
+                <img src="img/design-1.jpg" alt="Минимальный проект" class="card__image">
+                <div class="card__text">
+                  <h3 class="card__title">Минимальный</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item">Измерительные чертежи</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Перепланировка</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Планировка мебели</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Сантехнический план</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <strong class="design__pricetag">150 руб / м<sup>2</sup></strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col">
+              <div class="card types__card">
+                <img src="img/design-2.jpg" alt="Стандартный проект" class="card__image">
+                <div class="card__text">
+                  <h3 class="card__title">Стандартный</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item">Измерительные чертежи</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Перепланировка</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Планировка мебели</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">План потолков</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">План этажей</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">План электрики</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">План света</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <strong class="design__pricetag">400 руб / м<sup>2</sup></strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+            <div class="col">
+              <div class="card types__card">
+                <img src="img/design-3.jpg" alt="Полный проект" class="card__image">
+                <div class="card__text">
+                  <h3 class="card__title">Полный</h3>
+                  <!-- /.card__title -->
+                  <ul class="card__list">
+                    <li class="card__item">Измерительные чертежи</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Перепланировка</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Планировка мебели</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">План потолков</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">План этажей</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">План электрики</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">План света</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Стенные развертки</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">3D визуализация</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Смета на материалы</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Выезд на подбор материалов</li>
+                    <!-- /.card__item -->
+                    <li class="card__item">Выбор мебели</li>
+                    <!-- /.card__item -->
+                  </ul>
+                  <!-- /.card__list -->
+                  <strong class="design__pricetag">900 руб / м<sup>2</sup></strong>
+                </div>
+                <!-- /.card__text -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section control -->
+    </main>
+    <div class="modal">
+      <div class="modal__dialog">
+        <button class="modal__close"></button>
+        <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
+        <form action="#" class="form modal__form">
+          <label for="user-name" class="label form__label label--light">Имя</label>
+          <input type="text" class="input form__input modal__input" id="user-name" placeholder="Как вас зовут">
 
+          <label for="user-phone" class="label form__label label--light">Телефон</label>
+          <input type="tel" class="input form__input modal__input" id="user-name" placeholder="Ваш номер телефона:">
+
+          <label for="user-email" class="label form__label label--light">Email</label>
+          <input type="email" class="input form__input modal__input" id="user-email" placeholder="Ваш email">
+
+          <div class="policy modal__policy">
+            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+            <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+          </div>
+          <!-- /.policy -->
+          <button class="btn modal__btn btn--primary">Отправить заявку</button>
+        </form>
+        <!-- /.form modal__form -->
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
