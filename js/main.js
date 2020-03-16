@@ -14,8 +14,6 @@
 //     if (!modalDialog.contains(event.target))
 //     modal.classList.remove('modal--visible');
 //   }); 
-
-
 // });
 
 $(document).ready(function() {
@@ -32,25 +30,44 @@ $(document).ready(function() {
         modal.toggleClass('modal--visible');
       });
 
+      var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+         navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+          },
+      })
+
+      var next = $('.swiper-button-next');
+      var prev = $('.swiper-button-prev');
+      var bullets = $('.swiper-pagination');
+      var bullet = $('.swiper-pagination-bullet');
+      next.css('left', prev.width() + 20 + bullets.width() + 55 )
+      bullets.css('left', prev.width() +37)
+      
 $(function() {
-  $(window).scroll(function() {      //событие прокрутки окна
-    if($(this).scrollTop() != 0) {      //если не крайнее верхнее положение
-      $(".topbtn").fadeIn();         //появится кнопка прокрутки наверх
-    } else {                         //иначе 
-      $(".topbtn").fadeOut();         //пропадёт
+  $(window).scroll(function() {     //событие прокрутки окна
+    if($(this).scrollTop() != 0) {  //если у окна не крайнее верхнее положение
+      $(".topbtn").fadeIn();        //появится кнопка прокрутки наверх
+    } else {                        //иначе 
+      $(".topbtn").fadeOut();       //пропадёт
     }
   });
 
-  $(".topbtn").click(function() {      //событие клика по кнопке
+  $(".topbtn").click(function() {                //событие клика по кнопке
     $('body,html').animate({scrollTop:0},800);   //анимированная прокрутка со
                                                  // скоростью 800
     });
   });
 
-  $(modal).mouseup(function (e){ // событие клика по веб-документу
-		var div = $(".modal__dialog"); // тут указываем  элемент
-		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+  $(modal).mouseup(function (e){             // событие клика по веб-документу
+		var div = $(".modal__dialog");           // тут указываем  элемент
+		if (!div.is(e.target)                    // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) {   // и не по его дочерним элементам
 			$(".modal").removeClass("modal--visible") // убираем модификатор у .modal
 		}
 	});
@@ -61,4 +78,5 @@ $(function() {
 		}
   });
   
+
 });

@@ -304,6 +304,37 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'Futura Book';
+  src: url("../font/futura/FuturaBookC.woff") format("woff"), url("../font/futura/FuturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("../font/futura/FuturaDemiC.woff") format("woff"), url("../font/futura/FuturaDemiC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+.container {
+  width: 87%;
+  max-width: 89.714rem;
+  margin: auto; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 32%;
+  margin-left: 0.8rem; }
+
+.col-50 {
+  width: 50%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -319,6 +350,48 @@ img {
 
 .section {
   padding: 60px; }
+  .section--dark {
+    background-color: #131313;
+    color: #ffffff; }
+  .section-title {
+    text-align: center; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image::after, .section-title__image::before {
+        content: '';
+        width: 2.28rem;
+        height: 0.142rem;
+        margin: 0 0.714rem;
+        background-color: #E3B873;
+        border: 1px solid #E3B873;
+        border-radius: 30px; }
+    .section-title--left {
+      text-align: left; }
+    .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
+      font-size: 1.8rem;
+      font-weight: 400;
+      letter-spacing: -0.04rem;
+      line-height: 139.6%; }
+      .section-title__heading--primary {
+        color: #E3B873; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 92px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 2.3rem; }
+    .section-title__text {
+      font-size: 1.28rem;
+      line-height: 2.18rem;
+      max-width: 31.57rem;
+      margin-top: 0rem; }
 
 .topbtn {
   width: 15rem;
@@ -334,25 +407,6 @@ img {
   font-family: 'Futura Demi';
   text-transform: uppercase;
   font-size: 1rem; }
-
-.container {
-  width: 87%;
-  max-width: 89.714rem;
-  margin: auto; }
-
-@font-face {
-  font-family: 'Futura Book';
-  src: url("../font/futura/FuturaBookC.woff") format("woff"), url("../font/futura/FuturaBookC.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: wrap; }
-
-@font-face {
-  font-family: 'Futura Demi';
-  src: url("../font/futura/FuturaDemiC.woff") format("woff"), url("../font/futura/FuturaDemiC.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: wrap; }
 
 .btn {
   padding: 0.785rem 1.614rem;
@@ -475,6 +529,15 @@ img {
     background-color: rgba(19, 19, 19, 0.7);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid #000000; }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__content {
     max-width: 47.857rem;
     position: relative;
@@ -514,7 +577,8 @@ img {
     font-size: 0.85rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffffff; }
+    color: #ffffff;
+    z-index: 2; }
     .hero__scrolldown:after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -558,40 +622,83 @@ img {
   .title--primary {
     color: #E3B873; }
 
-.section-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Yeseva One', cursive;
-  font-size: 0.95rem; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::after, .section-title__image::before {
-      content: '';
-      width: 2.28rem;
-      height: 0.142rem;
-      margin: 0 0.714rem;
-      background-color: #E3B873;
-      border: 1px solid #E3B873;
-      border-radius: 30px; }
+.swiper-container {
+  margin-top: 2rem;
+  margin-left: -3rem;
+  margin-right: 3rem; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+  .swiper-slide__area {
+    margin-left: -7rem; }
+  .swiper-slide__deadline {
+    margin-top: -2.8rem; }
+  .swiper-slide__cost {
+    margin-left: -7rem;
+    margin-top: -2.8rem;
+    margin-bottom: 3rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-left.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/arrow-right.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -0.1rem; }
+
+.projects__section-title {
+  margin-top: 4.7rem;
+  margin-left: -3rem; }
+
+.control__section-title {
+  margin-top: -3.4rem;
+  margin-left: 1rem; }
+
+.control__heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem; }
 
 .types__section-title {
   margin-bottom: 2rem; }
 
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%;
-  margin-left: 1rem; }
+.types__heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
 
 .card__text {
   position: relative;
   margin: 0 auto;
-  margin-top: -9.1rem;
+  margin-top: -9.2rem;
   padding: 1.785rem 2.142rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
   background-color: #ffffff;
@@ -623,6 +730,10 @@ img {
   background-color: #E3B873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   color: #ffffff; }
+
+.design__heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem; }
 
 .design__text {
   font-size: 1.428rem;
