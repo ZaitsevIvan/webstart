@@ -41,6 +41,12 @@
   .col-50
     width: 100%
     justify-content: start
+    &:nth-of-type(1)
+      order: 2
+  .swiper
+    &-slide
+      &__text
+        max-width: 23rem
 
 
 @media screen and (max-width: 768px)
@@ -94,15 +100,26 @@
 
   .swiper
     &-slide
+      &__heading
+        font-size: 1rem
       &__text
-        display: block
+        max-width: 8.5rem
       &__city
-        display: block
+        margin-right: 8rem
       &__deadline
-        display: block
+        margin-right: 8rem
 
-
-
+@media screen and (max-width: 390px)
+  .swiper
+    &-slide
+      &__text
+        max-width: 6rem
+      &__heading
+        font-size: 0.8rem
+      &__city
+        margin-right: 8rem
+      &__deadline
+        margin-right: 8rem
 
 @media screen and ( max-height: 595px )
   .hero
