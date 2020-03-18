@@ -6,6 +6,13 @@
     &__item
       margin-right: 1rem
 
+@media screen and (max-width:1094px)
+  .swiper
+    &-slide
+      &__city
+        margin-right: 1.5rem
+      &__deadline
+        margin-right: 1.5rem
 @media screen and ( max-width: 992px)
   .hero
     &__instagram
@@ -20,16 +27,7 @@
     &__phone
       color: $light
       text-decoration: none
-  .col
-    &:nth-of-type(2)
-      .card__title
-        margin-bottom: 2rem
-    &:nth-of-type(3)
-      .card__title
-        margin-bottom: 0.5rem
 
-
-@media screen and (max-width: 760px)
   .row
     flex-direction: column
     align-items: center
@@ -40,8 +38,29 @@
       &__text
         margin-left: 0
 
+  .col-50
+    width: 100%
+    justify-content: start
 
-@media screen and (max-width: 570px)
+
+@media screen and (max-width: 768px)
+  .row
+    flex-direction: column
+    align-items: center
+  .types
+    &__card
+      margin-bottom: 4.28rem
+  .card
+      &__text
+        margin-left: 0
+
+  .swiper
+    &-slide
+      &__text
+        margin-right: 1.4rem
+
+
+@media screen and (max-width: 576px)
   .contacts
     &__phone
       margin-right: 0
@@ -72,6 +91,18 @@
   .section-title
     &__heading
       font-size: 1.57rem
+
+  .swiper
+    &-slide
+      &__text
+        display: block
+      &__city
+        display: block
+      &__deadline
+        display: block
+
+
+
 
 @media screen and ( max-height: 595px )
   .hero

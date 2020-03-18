@@ -46,8 +46,8 @@ $(document).ready(function() {
       var prev = $('.swiper-button-prev');
       var bullets = $('.swiper-pagination');
       var bullet = $('.swiper-pagination-bullet');
-      next.css('left', prev.width() + 20 + bullets.width() + 55 )
-      bullets.css('left', prev.width() +37)
+      next.css('left', prev.width() + 20 + bullets.width() + 18 )
+      bullets.css('left', prev.width() +18)
       
 $(function() {
   $(window).scroll(function() {     //событие прокрутки окна
