@@ -9,10 +9,9 @@
 @media screen and (max-width:1094px)
   .swiper
     &-slide
-      &__city
-        margin-right: 1.5rem
-      &__deadline
-        margin-right: 1.5rem
+      &__text
+        margin-right: 1.2rem
+
 @media screen and ( max-width: 992px)
   .hero
     &__instagram
@@ -43,10 +42,15 @@
     justify-content: start
     &:nth-of-type(1)
       order: 2
+
   .swiper
     &-slide
       &__text
-        max-width: 23rem
+
+      &__city
+        max-width: rem
+      &__deadline
+        margin-right: rem
 
 
 @media screen and (max-width: 768px)
@@ -63,7 +67,11 @@
   .swiper
     &-slide
       &__text
-        margin-right: 1.4rem
+        max-width: rem
+      &__city
+        max-width: rem
+      &__deadline
+        margin-right: rem
 
 
 @media screen and (max-width: 576px)
@@ -100,26 +108,23 @@
 
   .swiper
     &-slide
+      margin-right: rem
       &__heading
         font-size: 1rem
       &__text
-        max-width: 8.5rem
-      &__city
-        margin-right: 8rem
+        margin-right: rem
+      &__area
+        margin-left: -2.4rem
       &__deadline
-        margin-right: 8rem
+        margin-right: 5.8rem
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: -0.1rem
 
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 10px
 @media screen and (max-width: 390px)
-  .swiper
-    &-slide
-      &__text
-        max-width: 6rem
-      &__heading
-        font-size: 0.8rem
-      &__city
-        margin-right: 8rem
-      &__deadline
-        margin-right: 8rem
+
 
 @media screen and ( max-height: 595px )
   .hero
