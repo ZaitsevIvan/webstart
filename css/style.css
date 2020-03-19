@@ -849,6 +849,8 @@ img {
     justify-content: start; }
     .col-50:nth-of-type(1) {
       order: 2; }
+  .section-title__word::after {
+    display: none; }
   .swiper-slide__city {
     max-width: rem; }
   .swiper-slide__deadline {
@@ -906,28 +908,9 @@ img {
     .swiper-slide__area {
       margin-left: -2.4rem; }
     .swiper-slide__deadline {
-      margin-right: 5.8rem; } }
-
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  width: auto;
-  bottom: -0.1rem; }
-
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 10px; }
-
-@media screen and (max-width: 390px) {
-  .swiper-slide {
-    font-size: 0.8rem; }
-    .swiper-slide__text {
-      max-width: rem;
-      margin-right: rem; }
-    .swiper-slide__cost {
-      padding-bottom: rem; }
-    .swiper-slide__deadline {
-      max-width: rem;
-      margin-right: rem; }
+      margin-right: 5.8rem; }
   .swiper-button-next {
-    margin-left: -2.6rem; } }
+    margin-left: -2.7rem; } }
 
 @media screen and (max-height: 595px) {
   .hero__scrolldown {
