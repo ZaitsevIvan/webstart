@@ -822,10 +822,8 @@ img {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 1094px) {
-  .swiper-slide__city {
-    margin-right: 1.5rem; }
-  .swiper-slide__deadline {
-    margin-right: 1.5rem; } }
+  .swiper-slide__text {
+    margin-right: 1.2rem; } }
 
 @media screen and (max-width: 992px) {
   .hero__instagram {
@@ -848,7 +846,15 @@ img {
     margin-left: 0; }
   .col-50 {
     width: 100%;
-    justify-content: start; } }
+    justify-content: start; }
+    .col-50:nth-of-type(1) {
+      order: 2; }
+  .section-title__word::after {
+    display: none; }
+  .swiper-slide__city {
+    max-width: rem; }
+  .swiper-slide__deadline {
+    margin-right: rem; } }
 
 @media screen and (max-width: 768px) {
   .row {
@@ -859,7 +865,11 @@ img {
   .card__text {
     margin-left: 0; }
   .swiper-slide__text {
-    margin-right: 1.4rem; } }
+    max-width: rem; }
+  .swiper-slide__city {
+    max-width: rem; }
+  .swiper-slide__deadline {
+    margin-right: rem; } }
 
 @media screen and (max-width: 576px) {
   .contacts__phone {
@@ -889,12 +899,18 @@ img {
     font-size: 0.92rem; }
   .section-title__heading {
     font-size: 1.57rem; }
-  .swiper-slide__text {
-    display: block; }
-  .swiper-slide__city {
-    display: block; }
-  .swiper-slide__deadline {
-    display: block; } }
+  .swiper-slide {
+    margin-right: rem; }
+    .swiper-slide__heading {
+      font-size: 1rem; }
+    .swiper-slide__text {
+      margin-right: rem; }
+    .swiper-slide__area {
+      margin-left: -2.4rem; }
+    .swiper-slide__deadline {
+      margin-right: 5.8rem; }
+  .swiper-button-next {
+    margin-left: -2.7rem; } }
 
 @media screen and (max-height: 595px) {
   .hero__scrolldown {
