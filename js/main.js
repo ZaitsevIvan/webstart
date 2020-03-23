@@ -49,6 +49,8 @@ $(document).ready(function() {
       next.css('left', prev.width() + 20 + bullets.width() + 18 )
       bullets.css('left', prev.width() +18)
       
+      new WOW().init();
+
 $(function() {
   $(window).scroll(function() {     //событие прокрутки окна
     if($(this).scrollTop() != 0) {  //если у окна не крайнее верхнее положение
